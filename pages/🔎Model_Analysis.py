@@ -75,4 +75,4 @@ if feat is not None:
     fig = px.bar(feat, x='Importance', y='Feature')
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
     
-# st.sidebar.markdown('''[Source](youtube.com) ''')
+st.sidebar.markdown('''[Source](https://github.com/chukbert/depression-analytics-dashboard) ''')

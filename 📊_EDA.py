@@ -125,6 +125,8 @@ st.markdown('''
 
 if first_feat is None:
     plot_depression()   
+    st.sidebar.markdown('''[Source](https://github.com/chukbert/depression-analytics-dashboard) ''')
+    
     st.stop() # This will halt the app from further execution.
 else:
     show_features = [feat for feat in show_features if feat!=first_feat]    
@@ -132,7 +134,8 @@ else:
         'Add another feature to analyze:',
         show_features,
         index=None,)
-    
+    st.sidebar.markdown('''[Source](https://github.com/chukbert/depression-analytics-dashboard) ''')
+
     if second_feat is None:
         plot_1([first_feat])
         st.stop()
@@ -143,5 +146,5 @@ else:
         plot_1([second_feat])
         st.stop()
         
-# st.sidebar.markdown('''[Source](youtube.com) ''')
+    
 
